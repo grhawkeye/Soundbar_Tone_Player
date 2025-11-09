@@ -39,7 +39,7 @@ A Windows system tray application that plays audio files (WAV/MP3) at regular in
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/soundbar-tone-player.git
+git clone https://github.com/grhawkeye/Soundbar_Tone_Player.git
 cd soundbar-tone-player
 
 # Install dependencies
