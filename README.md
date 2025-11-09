@@ -46,10 +46,10 @@ cd soundbar-tone-player
 pip install -r requirements.txt
 
 # Run the application
-python tone_player.py
+python soundbar_tone_player.py
 
 # Or test mode (plays once and exits)
-python tone_player.py --test
+python soundbar_tone_player.py --test
 ```
 
 ### Important: File Locations
@@ -58,7 +58,7 @@ python tone_player.py --test
 
 Example folder structure:
 ```
-C:\MyApps\TonePlayer\
+C:\SoundbarTonePlayer\
 ├── SoundbarTonePlayer.exe
 ├── player_settings.json
 └── tone.wav
@@ -112,10 +112,10 @@ To run from source code:
 pip install -r requirements.txt
 
 # Run the application
-python tone_player.py
+python soundbar_tone_player.py
 
 # Test mode
-python tone_player.py --test
+python soundbar_tone_player.py --test
 ```
 
 ### Building from Source
@@ -149,7 +149,7 @@ The built executable will be in `dist\SoundbarTonePlayer.exe`
 
 ```
 Soundbar_Tone_Player/
-├── tone_player.py          # Main application source code
+├── soundbar_tone_player.py          # Main application source code
 ├── player_settings.json    # Configuration file (auto-created)
 ├── requirements.txt        # Python dependencies
 ├── README.md              # This file
@@ -223,7 +223,7 @@ All source code is available for review in this repository.
 
 **Verification:**
 
-1. Review the source code in `tone_player.py` - it only plays audio files
+1. Review the source code in `soundbar_tone_player.py` - it only plays audio files
 2. Build the executable yourself from source (see instructions below)
 3. The detections are from generic heuristics, not actual malware signatures
 4. Major antivirus vendors (Windows Defender, Kaspersky, Bitdefender, etc.) typically show clean results
