@@ -1,5 +1,6 @@
 __file__ = "soundbar_tone_player.py"
 __author__ = "Nikolaos Ntouroutlis"
+__github__ = "https://github.com/grhawkeye/Soundbar_Tone_Player"
 __license__ = "MIT License"
 __version__ = "1.0.0"
 __status__ = "Production"
