@@ -40,7 +40,7 @@ A Windows system tray application that plays audio files (WAV/MP3) at regular in
 ```powershell
 # Clone the repository
 git clone https://github.com/grhawkeye/Soundbar_Tone_Player.git
-cd soundbar-tone-player
+cd Soundbar_Tone_Player
 
 # Install dependencies
 pip install -r requirements.txt
@@ -124,8 +124,8 @@ python soundbar_tone_player.py --test
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/soundbar-tone-player.git
-cd soundbar-tone-player
+git clone https://github.com/yourusername/Soundbar_Tone_Player.git
+cd Soundbar_Tone_Player
 
 # Create virtual environment (optional but recommended)
 python -m venv .venv
