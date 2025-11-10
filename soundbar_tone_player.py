@@ -7,7 +7,7 @@ __status__ = "Production"
 
 """
 Soundbar Tone Player - System Tray Application
-Plays audio files (WAV/MP3) at regular intervals
+Plays audio files (WAV/FLAC/OGG) at regular intervals
 Reads configuration from player_settings.json
 """
 import json
@@ -74,7 +74,7 @@ class TonePlayer:
             pass  # Suppress errors when running without console
     
     def play_audio(self):
-        """Play the configured audio file (supports WAV and MP3)"""
+        """Play the configured audio file (supports WAV, FLAC, OGG; limited MP3 support)"""
         try:
             audio_path = self.get_audio_path()
             
@@ -211,15 +211,22 @@ class TonePlayer:
                     pass
             else:
                 # Add to startup
-                script_path = str(Path(__file__).resolve())
-                python_exe = sys.executable
-                # Use pythonw.exe to run without console window
-                python_no_console = python_exe.replace("python.exe", "pythonw.exe")
-                if os.path.exists(python_no_console):
-                    python_exe = python_no_console
-                startup_command = f'"{python_exe}" "{script_path}"'
+                if getattr(sys, 'frozen', False):
+                    # We are running in a bundle (e.g., PyInstaller .exe)
+                    exe_path = sys.executable
+                    startup_command = f'"{exe_path}"'
+                else:
+                    # We are running as a .py script
+                    script_path = str(Path(__file__).resolve())
+                    python_exe = sys.executable
+                    # Use pythonw.exe to run without console window
+                    python_no_console = python_exe.replace("python.exe", "pythonw.exe")
+                    if os.path.exists(python_no_console):
+                        python_exe = python_no_console
+                    startup_command = f'"{python_exe}" "{script_path}"'
+                    
                 winreg.SetValueEx(key, "SoundbarTonePlayer", 0, winreg.REG_SZ, startup_command)
-                self.log("Added to Windows startup")
+                self.log(f"Added to Windows startup with command: {startup_command}")
                 if self.icon:
                     self.icon.notify("Startup Enabled", "App will start with Windows")
             
@@ -376,8 +383,10 @@ Configuration:
   - "Set Custom Interval..." opens player_settings.json
 
 Supported formats:
-  - WAV: Full support
-  - MP3: Basic support
+  - WAV:  Full support (recommended)
+  - FLAC: Full support
+  - OGG:  Full support
+  - MP3:  Limited support (may not work with all MP3 files)
 
 System Tray Menu:
   - Start with Windows  (Toggle startup)
