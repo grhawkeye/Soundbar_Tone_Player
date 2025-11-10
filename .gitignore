@@ -6,6 +6,7 @@ env/
 # PyInstaller build artifacts
 build/
 dist/
+release/
 *.spec
 
 # Python cache files
@@ -32,3 +33,6 @@ Thumbs.db
 
 # Icon bundle (keep only the final icon in .icon/)
 Speaker_icon-icons.com_54138_bundle/
+
+# Local files
+info.txt
