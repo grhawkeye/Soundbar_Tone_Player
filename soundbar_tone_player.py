@@ -74,7 +74,7 @@ class TonePlayer:
             pass  # Suppress errors when running without console
     
     def play_audio(self):
-        """Play the configured audio file (supports WAV, FLAC, OGG; limited MP3 support)"""
+        """Play the configured audio file (supports WAV, FLAC, OGG)"""
         try:
             audio_path = self.get_audio_path()
             
@@ -386,7 +386,6 @@ Supported formats:
   - WAV:  Full support (recommended)
   - FLAC: Full support
   - OGG:  Full support
-  - MP3:  Limited support (may not work with all MP3 files)
 
 System Tray Menu:
   - Start with Windows  (Toggle startup)

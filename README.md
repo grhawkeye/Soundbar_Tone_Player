@@ -110,12 +110,11 @@ SoundbarTonePlayer.exe --help
 
 ### Supported Audio Formats
 
-- **WAV** - ✅ Full support (strongly recommended)
+- **WAV** - ✅ Full support (recommended)
 - **FLAC** - ✅ Full support
 - **OGG** - ✅ Full support
-- **MP3** - ⚠️ Limited support (may not work with all MP3 files due to `soundfile` library limitations)
 
-**Note:** For best compatibility, use **WAV format**. The `soundfile` library has excellent support for WAV, FLAC, and OGG formats, but MP3 support is limited because the underlying `libsndfile` library was designed without MP3 codec support.
+**Note:** For best compatibility, use **WAV format**.
 
 ---
 
