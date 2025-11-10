@@ -16,6 +16,18 @@ A Windows system tray application that plays audio files (WAV/MP3) at regular in
 - 🎯 Manual play on demand
 - 📦 Standalone executable - no Python installation required
 
+## ⚠️ The Problem Commission Regulation (EU) 2023/826
+
+The EU's Ecodesign Directive, implemented by Commission Regulation (EU) 2023/826, requires manufacturers of "electrical and electronic household and office equipment" (which includes audio equipment) to implement a power management function. This consists of all soundbar and AV receivers manufacturers to have an "auto-standby" or "eco-mode" feature. If no audio signal is detected for a period of time (like 15-20 minutes), they automatically shut down to save power.
+
+This becomes frustrating when you're working quietly, reading, or browsing, only to find your audio system has turned off right when you need it.
+
+## ✅ The Solution
+
+**Soundbar Tone Player** is a lightweight, "set it and forget it" utility that runs in your Windows system tray.
+
+It works by periodically playing a short, often inaudible, audio file (a "silent" MP3 or a low-frequency WAV works perfectly). This brief signal is just enough to "ping" your audio device, resetting its idle timer and preventing it from powering down.
+
 ## Quick Start
 
 ### Option 1: Download Pre-built Executable (Windows)
