@@ -1,6 +1,6 @@
 # Soundbar Tone Player
 
-A Windows system tray application that plays audio files (WAV/MP3) at regular intervals.
+A Windows system tray application that plays audio files (WAV) at regular intervals.
 
 ![Python](https://img.shields.io/badge/python-3.14+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -26,7 +26,7 @@ This becomes frustrating when you're working quietly, reading, or browsing, only
 
 **Soundbar Tone Player** is a lightweight, "set it and forget it" utility that runs in your Windows system tray.
 
-It works by periodically playing a short, often inaudible, audio file (a "silent" MP3 or a low-frequency WAV works perfectly). This brief signal is just enough to "ping" your audio device, resetting its idle timer and preventing it from powering down.
+It works by periodically playing a short, often inaudible, audio file (a low-frequency WAV works perfectly). This brief signal is just enough to "ping" your audio device, resetting its idle timer and preventing it from powering down.
 
 ## Quick Start
 
@@ -175,7 +175,7 @@ Soundbar_Tone_Player/
 ## Dependencies
 
 - `sounddevice` - Audio playback
-- `soundfile` - Audio file loading (WAV/MP3)
+- `soundfile` - Audio file loading (WAV)
 - `pystray` - System tray icon
 - `Pillow` - Icon image creation
 
