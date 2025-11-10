@@ -8,7 +8,7 @@ A Windows system tray application that plays audio files (WAV/MP3) at regular in
 
 ## Features
 
-- 🎵 Play audio files (WAV/MP3) at configurable intervals
+- 🎵 Play audio files (WAV, FLAC, OGG) at configurable intervals
 - 🖥️ Runs silently in Windows system tray
 - ⚙️ Easy configuration via JSON file
 - 🚀 Quick interval presets (3, 5, 10 minutes)
@@ -18,7 +18,7 @@ A Windows system tray application that plays audio files (WAV/MP3) at regular in
 
 ## ⚠️ The Problem Commission Regulation (EU) 2023/826
 
-The EU's Ecodesign Directive, implemented by Commission Regulation (EU) 2023/826, requires manufacturers of "electrical and electronic household and office equipment" (which includes audio equipment) to implement a power management function. This consists of all soundbar and AV receivers manufacturers to have an "auto-standby" or "eco-mode" feature. If no audio signal is detected for a period of time (like 15-20 minutes), they automatically shut down to save power.
+The EU's Ecodesign Directive, implemented by Commission Regulation (EU) 2023/826, requires manufacturers of "electrical and electronic household and office equipment" (which includes audio equipment) to implement a power management function. This consists of all soundbar and AV receiver manufacturers to have an "auto-standby" or "eco-mode" feature. If no audio signal is detected for a period of time (like 15-20 minutes), they automatically shut down to save power.
 
 This becomes frustrating when you're working quietly, reading, or browsing, only to find your audio system has turned off right when you need it.
 
